@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View v) {
                Toast.makeText(getApplicationContext(), "stai pr uscire", Toast.LENGTH_LONG).show();
                          }
+
        });
 
        //ascoltatore sugli elementi Listener
