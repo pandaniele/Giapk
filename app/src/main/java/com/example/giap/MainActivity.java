@@ -2,6 +2,7 @@ package com.example.giap;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -51,7 +52,20 @@ public class MainActivity extends AppCompatActivity {
             @Override                                                      // i=indice elemento dell'item della ListView selezionata
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String titolo= (String) lwFilm.getItemAtPosition(i);
-                Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
+                // ESERCIZIO DI PROVA Toast.makeText(getApplicationContext(), titolo, Toast.LENGTH_LONG).show();
+                //Ese secondo: //POSTER & TITOLO.
+
+
+                Intent cioc=new Intent(getApplicationContext(), MainTwo.class);
+                //acrtivity da far partire
+                cioc.putExtra("messaggio",titolo); //?
+                //pacchetto aggiuntivo: CHIAVE VALORE
+                startActivity(cioc);
+                //
+//indicce valoore---- chiave-valore=array eterogeneo di dati
+                // 0 100 int       numero 1000
+                //                 an ciao
+
             }
         });
 
