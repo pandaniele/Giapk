@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Giap">
         <activity
-            android:name=".MainTwo"
+            android:name=".Listafilm"
+            android:exported="false" />
+        <activity
+            android:name=".Filmselezionato"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
