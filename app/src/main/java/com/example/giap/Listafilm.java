@@ -16,7 +16,7 @@ public class Listafilm extends AppCompatActivity {
     //array di tipo stringa
     String film[]={"Spiderman", "Titanic", "DuLi"};
     //array di tipo stringa che contiene il nome delle immagini...
-    String immagine[]={"al.jpg", "spider.jpg", "gucci.jpg"};
+    String immagine[]={"apple.png", "kong.png", "netflix.png"};
     //
     ListView lwFilm;
 
